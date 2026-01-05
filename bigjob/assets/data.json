@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "fullName": "Admin Demo",
+      "email": "admin@laplateforme.io",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "u-mod",
+      "fullName": "Moderateur Demo",
+      "email": "moderateur@laplateforme.io",
+      "password": "mod12345",
+      "role": "moderator"
+    },
+    {
+      "id": "u-student",
+      "fullName": "Etudiant Demo",
+      "email": "etudiant@laplateforme.io",
+      "password": "student123",
+      "role": "student"
+    }
+  ],
+  "requests": [
+    {
+      "id": "r-1",
+      "userId": "u-student",
+      "date": "2026-01-10",
+      "slot": "08:00-12:00",
+      "status": "pending"
+    }
+  ]
+}
