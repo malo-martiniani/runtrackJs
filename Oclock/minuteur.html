@@ -15,7 +15,14 @@
             <a href="reveil.html">Réveil</a>
         </nav>
     </header>
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <div id="MyMinuteurDisplay" class="clock" onload="showTime()"></div>
+    <input type="number" id="minutes" placeholder="Minutes" min="0">
+    <input type="number" id="secondes" placeholder="Secondes" min="0" max="59">
+    <div class="buttons">
+        <button onclick="demarrerMinuteur()">Démarrer</button>
+        <button onclick="arreterMinuteur()">Arrêter</button>
+        <button onclick="resetMinuteur()">Réinitialiser</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
