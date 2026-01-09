@@ -15,7 +15,23 @@
             <a href="reveil.html">Réveil</a>
         </nav>
     </header>
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <main class="container">
+        <h1>Chronomètre</h1>
+        <div class="card">
+            <div id="chrono-display" class="clock">00:00:00</div>
+            <div class="buttons">
+                <button id="chrono-toggle">Démarrer</button>
+                <button id="chrono-lap" disabled>Tour</button>
+                <button id="chrono-reset" disabled>Reset</button>
+            </div>
+            <div class="laps">
+                <h2>Vos tours</h2>
+                <ul id="chrono-laps" class="laps-list">
+                    <li>Aucun tour enregistré.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

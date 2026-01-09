@@ -15,7 +15,20 @@
             <a href="reveil.html">Réveil</a>
         </nav>
     </header>
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <main class="container">
+        <h1>Réveil</h1>
+        <div class="card">
+            <form class="alarm-form">
+                <input type="time" id="alarm-time" required aria-label="Heure de l'alarme">
+                <input type="text" id="alarm-message" placeholder="Message" required aria-label="Message de l'alarme">
+                <button id="add-alarm">Ajouter</button>
+            </form>
+            <h2>Alarms programmées</h2>
+            <ul id="alarm-list" class="alarm-list">
+                <li>Aucune alarme programmée.</li>
+            </ul>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

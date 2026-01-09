@@ -1,0 +1,142 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #f5f5f5;
+	color: #1f2937;
+	margin: 0;
+}
+
+header {
+	background: #111827;
+	padding: 12px 20px;
+}
+
+nav {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+}
+
+nav a {
+	color: #e5e7eb;
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 8px;
+}
+
+nav a:hover {
+	background: #1f2937;
+}
+
+.container {
+	max-width: 720px;
+	margin: 32px auto;
+	padding: 0 16px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.card {
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.clock {
+	font-size: 48px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.buttons {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+button {
+	padding: 10px 16px;
+	border: none;
+	border-radius: 8px;
+	background: #740202;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+button:disabled {
+	background: #cbd5e1;
+}
+
+input {
+	padding: 10px 12px;
+	border-radius: 8px;
+	border: 1px solid #d1d5db;
+	font-size: 16px;
+}
+
+.alarm-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.alarm-list,
+.laps-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.alarm-item {
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	padding: 12px;
+	margin-bottom: 10px;
+	background: #f9fafb;
+}
+
+.alarm-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+}
+
+.alarm-time {
+	font-weight: 700;
+}
+
+.alarm-status {
+	font-size: 14px;
+	color: #374151;
+}
+
+.alarm-message {
+	color: #111827;
+}
+
+.laps h2 {
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+
+.laps-list li {
+	padding: 8px 10px;
+	background: #f9fafb;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+	.alarm-form {
+		grid-template-columns: 1fr;
+	}
+}
